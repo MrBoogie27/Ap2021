@@ -1,8 +1,11 @@
 # Повторение эксперимента на основе нейронной сети EditSql на базе датасета CoSQL
 ## Начало работы
-Для подключение необходимых библиотек необходимо выполнить `%pip install -r editsql/requirements.txt`
-Также необходимо скачать BERT можель: https://drive.google.com/file/d/1f_LEWVgrtZLRuoiExJa5fNzTS8-WcAX9/view?usp=sharing
+Для подключения необходимых библиотек необходимо выполнить `%pip install -r editsql/requirements.txt`
+
+Также необходимо скачать BERT модель: https://drive.google.com/file/d/1f_LEWVgrtZLRuoiExJa5fNzTS8-WcAX9/view?usp=sharing
+
 Скачать базу данных с таблицами sql: https://drive.google.com/file/d/1a828mkHcgyQCBgVla0jGxKJ58aV8RsYK/view?usp=sharing - положить их в папку editsql/data/
+
 Скачать датасет CoSql https://yale-lily.github.io/cosql
 ## Подготовка данных
 Из-за ограничений по мощностям и времени, был взят 1% от всего датасета. 20 диалогов.
@@ -14,7 +17,6 @@ cd editsql && ./run_cosql_editsql.sh
 Было ограничено количество эпох до 10.
 ## Результаты
 Так как данных было взято немного, модель переобучилась. На тренирвочном датасете значения очень хорошие, но на валидационном плохие:
-### LOSS
 | Dataset   |      Original      |  Experiment |
 |----------|:-------------:|------:|
 | Train Loss |  0.0019981423803967966 | 0.10384764242917299 |
