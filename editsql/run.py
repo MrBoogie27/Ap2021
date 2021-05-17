@@ -56,8 +56,8 @@ def train(model, data, params):
                                   max_output_length=maximum_output_length,
                                   randomize=not params.deterministic)
 
-    if params.num_train >= 0:
-        train_batches = train_batches[:params.num_train]
+    # if params.num_train >= 0:
+    train_batches = train_batches[:2]
 
     training_sample = trainsample_fn(params.train_evaluation_size,
                                      max_output_length=maximum_output_length)
