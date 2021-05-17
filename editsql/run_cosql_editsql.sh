@@ -37,7 +37,8 @@ CUDA_VISIBLE_DEVICES=0 python3 run.py --raw_train_filename="data/cosql_data_remo
           --logdir=$LOGDIR \
           --evaluate=1 \
           --evaluate_split="valid" \
-          --use_predicted_queries=1
+          --use_predicted_queries=1 \
+		  --num-train 20
 
 # 3. get evaluation result
 
