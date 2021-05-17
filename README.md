@@ -21,3 +21,5 @@ cd editsql && ./run_cosql_editsql.sh
 |----------|:-------------:|------:|
 | Train Loss |  0.0019981423803967966 | 0.10384764242917299 |
 | Test Exact Match |    0.399   |  0.144 |
+
+Обученная модель: [ссылка](https://drive.google.com/file/d/1qGRu8arSasrGibx7uboYfrIs6eRuEBNv/view?usp=sharing)
